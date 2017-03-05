@@ -113,4 +113,4 @@ tidy.df <- as.data.frame(tidy.df)
 names(tidy.df)[1:2] <- c("subject", "activity")
 
 write.csv(tidy.df, "tidy-df.csv")
-
+write.table(tidy.df,  row.name=FALSE, "tidy-df.txt") 
